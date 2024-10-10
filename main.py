@@ -39,9 +39,10 @@
 #print(resultado)
 
 #from funcoes import funcional
-
 #import funcoes.map_reduce
-
 #import funcoes.lambdas
+#import funcoes.comprehension
 
-import funcoes.comprehension
+#import OO.produto
+#import OO.heranca
+#import OO.membros
