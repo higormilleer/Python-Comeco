@@ -3,6 +3,7 @@ while x:
     print(x) #melhor o proprio for, while apenas para qtde indeterminada
     x-=1
 
+#verificar se e par ou impar com while
 y = 15
 while y > 0:
     if y % 2 == 0:
