@@ -1,9 +1,14 @@
-for i in range(10):
-    print(i,end = " ")
+for x in range(5):
+    if x % 2 == 0:
+        print(f"{x} é par", end=" ")
+    else:
+        print(f"{x} é ímpar", end=" ")
 
-for i in range(1,11):
-    print(i,end = " ")
+soma = 0
 
+for y in range(1, 6):
+    soma += y
+    print(f"Soma atual: {soma}", end=" ")
 
 for i in range(1,100, 5):
     print(i,end = " ")
@@ -25,9 +30,9 @@ for n in {1,2,3,4,4,4}:
     print(n, end = " ")
 
 produto = {
-    "nome": "Caneta",
-    "preco": "8.80",
-    "desconto": 0.5
+    "nome": "Higor",
+    "Nota": "7.0",
+    "trabalho": 0.5
 }
 
 for atrib in produto:
