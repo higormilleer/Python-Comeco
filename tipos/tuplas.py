@@ -1,6 +1,6 @@
-nomes = ("Ana", "Bia", "Gui", "Leo", "Ana")
+nomes = ("Higor", "Yuri", "Luigi", "Matheus", "Oliver")
 
-print("Bia" in nomes)
+print("Higor" in nomes)
 
 print(nomes[0])
 print(nomes[1:3])
