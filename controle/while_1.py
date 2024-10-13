@@ -3,6 +3,14 @@ while x:
     print(x) #melhor o proprio for, while apenas para qtde indeterminada
     x-=1
 
+y = 15
+while y > 0:
+    if y % 2 == 0:
+        print(f"{y} é par!")
+    else:
+        print(f"{y} é ímpar!")
+    y -= 1
+
 print("Fim")
 
 total = 0
