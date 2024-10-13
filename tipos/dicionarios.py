@@ -1,6 +1,7 @@
+#tabela empregado informando o nome, cargo e salario 
 empregado = {
     'nome': "Pedro Henrique",
-    "cargo": CO, 
+    "cargo": "CO", 
     "salario": 4.000
 }
 
