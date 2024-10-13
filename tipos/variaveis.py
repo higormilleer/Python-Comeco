@@ -1,10 +1,10 @@
-a = 3
-b = 4.4
+a = 5
+b = 12
 
 print(a+b)
 
 #texto = "Sua idade é"
-#idade = 23
+#idade = 19
 
 #print(texto + str(idade))
 #print(f"{texto} {idade}")
@@ -13,6 +13,6 @@ print(a+b)
 #print(3* saudacao)
 
 PI = 3.14
-raio = float(input("informe o raio da circ? "))
+raio = float(input("informe o raio da circunferencia? "))
 area = PI * pow(raio,2)
-print(f"A area da cir é {area} m2. ")
+print(f"A area da circunferencia é {area} m2. ")
