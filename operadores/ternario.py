@@ -1,7 +1,7 @@
-lockdown = False
-grana = 30
+mae_nao_deixou = False
+grana = 100
 
-status = "Em casa" if lockdown or grana <= 100 else "Uhuu"
+status = "Em casa" if mae_nao_deixou or grana <= 100 else "Uhuu"
 
 print(status)
 
