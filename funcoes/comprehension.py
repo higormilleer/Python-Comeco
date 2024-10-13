@@ -16,13 +16,12 @@ total = reduce(somar,nota_aluno_aprovado,0)
 
 print(total/len(nota_aluno_aprovado))
 
+#Lista de alunos reprovados
+alunos_reprovados = [aluno for aluno in alunos if aluno["nota"] < 7]
+nota_aluno_reprovado = [aluno["nota"] for aluno in alunos_reprovados]
+total_reprovado = reduce(somar,nota_aluno_aprovado,0)
 
-total_ponderado = reduce(
-    lambda acc, aluno: acc + aluno["nota"] * aluno["peso"], alunos, 0
-)
-
-total_pesos = reduce(lambda acc, aluno: acc + aluno["peso"], alunos, 0)
-
-media_ponderada = total_ponderado / total_pesos if total_pesos != 0 else 0
-
-print(f"Média ponderada geral: {media_ponderada:.2f}")
+print(total)
+print(total_reprovado)
+print(alunos_aprovados)
+print(alunos_reprovados)
