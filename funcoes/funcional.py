@@ -36,3 +36,30 @@ r3 = soma_1(4)
 
 resultado_final = soma_parcial(10)(12)
 print(resultado_final,r1,r2,r3 )
+
+
+def calculadora_simples():
+    print("Escolha a operação que deseja realizar:")
+    print("1: Soma")
+    print("2: Subtração")
+    print("3: Sair")
+
+    while True:
+        escolha = input("Digite o número da operação (1-3): ")
+
+        if escolha == '3':
+            print("Saindo da calculadora. Até mais!")
+            break
+
+        num1 = float(input("Digite o primeiro número: "))
+        num2 = float(input("Digite o segundo número: "))
+
+
+        if escolha == '1':
+            soma = num1 + num2
+            print(f"A soma dos números é: {soma}")
+        if escolha == "2": 
+            subtracao = num1 - num21
+            print(f"A subtração dos números é: {subtracao}")
+
+calculadora_simples()
