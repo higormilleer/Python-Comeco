@@ -1,12 +1,12 @@
 nums = [1,2,3]
 print(type(nums))
 
-nums.append(3)
-nums.append(4)
-nums.append(500)
+nums.append(7)
+nums.append(9)
+nums.append(300)
 print(len(nums))
 
-nums[3] = 100
+nums[3] = 200 
 nums.insert(0,-200)
 print(nums[6])
 print(nums[-1])
