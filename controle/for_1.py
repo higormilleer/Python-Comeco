@@ -1,11 +1,13 @@
+#ver qual numero e par ou impar
 for x in range(5):
     if x % 2 == 0:
         print(f"{x} é par", end=" ")
     else:
         print(f"{x} é ímpar", end=" ")
 
-soma = 0
 
+#soma dos numeros de 1 a 6
+soma = 0
 for y in range(1, 6):
     soma += y
     print(f"Soma atual: {soma}", end=" ")
