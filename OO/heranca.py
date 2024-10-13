@@ -17,7 +17,7 @@ class Carro:
     class Uno(Carro):
         pass
 
-#colo o turbo no qual adciona 30 na velocidade do carro de uma vez so
+#turbo no qual adciona 30 na velocidade do carro de uma vez so
 class Ferrari(Carro):
     def acelerar(self):
         super().acelerar()
