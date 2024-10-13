@@ -15,3 +15,14 @@ nota_aluno_aprovado = [aluno["nota"] for aluno in alunos_aprovados]
 total = reduce(somar,nota_aluno_aprovado,0)
 
 print(total/len(nota_aluno_aprovado))
+
+
+total_ponderado = reduce(
+    lambda acc, aluno: acc + aluno["nota"] * aluno["peso"], alunos, 0
+)
+
+total_pesos = reduce(lambda acc, aluno: acc + aluno["peso"], alunos, 0)
+
+media_ponderada = total_ponderado / total_pesos if total_pesos != 0 else 0
+
+print(f"Média ponderada geral: {media_ponderada:.2f}")
