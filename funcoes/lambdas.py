@@ -1,11 +1,11 @@
 from functools import reduce
 
 alunos = [
-    {"nome":"Ana", "nota": 7.2},
-    {"nome":"Higor", "nota": 8.1},
-    {"nome":"Claudia", "nota": 8.7},
-    {"nome":"Pedro", "nota": 6.4},
-    {"nome":"Rafael", "nota": 6.7},
+    {"nome":"Yuri", "nota": 8.0},
+    {"nome":"Higor", "nota": 9.0},
+    {"nome":"Matheus", "nota": 6.0},
+    {"nome":"Lucas", "nota": 7.0},
+    {"nome":"Luigi", "nota": 4.0},
 ]
 
 alunos_aprovado = lambda aluno: aluno["nota"] >=7
@@ -20,9 +20,13 @@ somar = lambda a,b: a+b
 nota_aluno_aprovado = map(obter_nota, alunos_aprovados)
 nota_aluno_aprovado = list(nota_aluno_aprovado)
 
+maxima = lambda a, b: a if a > b else b
+nota_maxima = reduce(maxima, nota_aluno_aprovado)
+
 total = reduce(somar,nota_aluno_aprovado,0)
 
 #print(alunos_aprovados)
 #print(obter_nota(alunos[2]))
 #print(nota_aluno_aprovado)
+print(nota_maxima)
 print(total/len(nota_aluno_aprovado))
