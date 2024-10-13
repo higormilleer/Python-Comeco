@@ -14,6 +14,7 @@ class Contador:
         cls.contador -= 1
         return cls.contador
     
+    #reinicia o contador de incremento/decremento
     def reiniciar_contador(cls):
         cls.contador = 0
         return cls.contador
