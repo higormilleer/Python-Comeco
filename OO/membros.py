@@ -14,6 +14,10 @@ class Contador:
         cls.contador -= 1
         return cls.contador
     
+    def reiniciar_contador(cls):
+        cls.contador = 0
+        return cls.contador
+    
     @staticmethod
     def mais_um(n):
         return n+1
@@ -29,3 +33,4 @@ print(Contador.decremento())
 print(Contador.decremento())
 print(Contador.mais_um(99))
 
+print(Contador.reiniciar_contador())
