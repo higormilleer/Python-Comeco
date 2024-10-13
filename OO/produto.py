@@ -17,6 +17,7 @@ class Produto:
     def preco_final(self):
         return (1-self.desc) * self.preco    
 
+    #mostra uma tabela com o produto, o preco normal, o preco com desconto e o preco final
     def exibir_info(self):
         print(f"Produto: {self.nome}")
         print(f"Preço Original: R${self.preco}")
