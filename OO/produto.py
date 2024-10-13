@@ -17,9 +17,16 @@ class Produto:
     def preco_final(self):
         return (1-self.desc) * self.preco    
 
+    def exibir_info(self):
+        print(f"Produto: {self.nome}")
+        print(f"Preço Original: R${self.preco}")
+        print(f"Desconto: {self.desc*100}%")
+        print(f"Preço Final: R${self.preco_final:.2f}")
+
 p1 = Produto("Caneta", 5.99, 0.10)
 p2 = Produto("Caderno", 12.99, 0.10)
-
+p1.exibir_info()
+p2.exibir_info()
 p1.preco = -70
 p2.preco = - 2
 
