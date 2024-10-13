@@ -19,6 +19,14 @@ for i in range(1,11):
 
 print("")
 
+for i in range(10, 0, -1):  # Contagem decrescente de 10 a 1
+    if i % 3 == 0:
+        print(f"{i} é divisível por 3")
+    else:
+        print(i, end=" ")
+
+print("")
+
 for i in range(1,11):
     if i == 5:
         break
