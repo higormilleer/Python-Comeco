@@ -14,9 +14,10 @@ class Carro:
         self.__velocidade -= 5
         return self.__velocidade
 
-class Uno(Carro):
-    pass
+    class Uno(Carro):
+        pass
 
+#colo o turbo no qual adciona 30 na velocidade do carro de uma vez so
 class Ferrari(Carro):
     def acelerar(self):
         super().acelerar()
