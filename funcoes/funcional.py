@@ -38,6 +38,7 @@ resultado_final = soma_parcial(10)(12)
 print(resultado_final,r1,r2,r3 )
 
 
+#calculadora para soma e subtracao
 def calculadora_simples():
     print("Escolha a operação que deseja realizar:")
     print("1: Soma")
