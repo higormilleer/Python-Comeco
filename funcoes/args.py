@@ -9,6 +9,7 @@ def resultado_final(**kwargs):
     return f"{kwargs["nome"]} foi {status}"
     
 
+#ele verifica o comportamento do aluno, e caso n foi comportado, reprova
 def resultado_final(**kwargs):
     nota = kwargs.get("nota", 0)
     comportado = kwargs.get("comportado", True)
