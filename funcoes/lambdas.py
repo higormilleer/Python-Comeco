@@ -20,6 +20,7 @@ somar = lambda a,b: a+b
 nota_aluno_aprovado = map(obter_nota, alunos_aprovados)
 nota_aluno_aprovado = list(nota_aluno_aprovado)
 
+#verifica qual a maior nota dos aprovados
 maxima = lambda a, b: a if a > b else b
 nota_maxima = reduce(maxima, nota_aluno_aprovado)
 
