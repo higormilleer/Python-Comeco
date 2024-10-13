@@ -1,15 +1,20 @@
-nota = float(input("Informe a nota do aluno: "))
-comportado = True if input("Comportado(y/n): ") == "y" else False
+nota = float(input("Informe a nota do estudante: "))
+comportado = input("O aluno foi comportado (s/n)? ").lower() == 's'
 
 
-if nota>= 9 and comportado: 
-    print("Duas palavras: Para bens! ")
-    print("Quadro de Honra" )
-elif nota >=7:
-    print("Aprovado! ")
-elif nota >=5:
-    print("Recuperacao! ")
+if nota >= 9 and comportado:
+    print("Excelente! Duas palavras: Para bens!")
+    print("Será destaque no Quadro de Honra.")
+elif nota >= 7 and comportado:
+    print("Aprovado, Comportamento bom.")
+elif nota >= 7:
+    print("Aprovado, melhorar o comportamento.")
+elif nota >= 5:
+    print("Recuperação.")
 else:
-    print("Reprovado! ")
+    if comportado:
+        print("Reprovado, comportamento foi bom.")
+    else:
+        print("Reprovado, melhorar o comportamento.")
 
-print(nota)
+print(f"Nota final: {nota}")
