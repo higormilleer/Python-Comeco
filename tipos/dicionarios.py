@@ -1,12 +1,12 @@
-aluno = {
+empregado = {
     'nome': "Pedro Henrique",
-    "nota": 9.2, 
-    "ativo": True
+    "cargo": CO, 
+    "salario": 4.000
 }
 
-print(type[aluno])
-print(aluno["nome"])
-print(aluno["nota"])
-print(aluno["ativo"])
+print(type[empregado])
+print(empregado["nome"])
+print(empregado["cargo"])
+print(empregado["salario"])
 
-print(len(aluno))
+print(len(empregado))
