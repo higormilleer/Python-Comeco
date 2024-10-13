@@ -2,6 +2,7 @@ nota = float(input("Informe a nota do estudante: "))
 comportado = input("O aluno foi comportado (s/n)? ").lower() == 's'
 
 
+#modifiquei para que a mensagem mudasse dependendo do comportamento do aluno
 if nota >= 9 and comportado:
     print("Excelente! Duas palavras: Para bens!")
     print("Será destaque no Quadro de Honra.")
